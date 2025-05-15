@@ -50,7 +50,6 @@ public class UserController {
         return "redirect:/users";
     }
 
-
     @PostMapping("delete")
     public String delete(@RequestParam(value = "id", defaultValue = "0") int id) {
         userService.delete(id);
